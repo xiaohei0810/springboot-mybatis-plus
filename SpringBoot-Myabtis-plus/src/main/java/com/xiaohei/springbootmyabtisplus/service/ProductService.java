@@ -1,5 +1,6 @@
 package com.xiaohei.springbootmyabtisplus.service;
 
+import com.xiaohei.springbootmyabtisplus.entity.Product;
 import com.xiaohei.springbootmyabtisplus.entity.ResponseData;
 
 /**
@@ -8,9 +9,8 @@ import com.xiaohei.springbootmyabtisplus.entity.ResponseData;
  * @Version 1.0
  * @Describtion
  */
-public interface UserInfoService {
+public interface ProductService {
 
-    ResponseData queryAllInfo();
+    int insertProduct(Product product,int num);
 
-    ResponseData transactionA();
 }
